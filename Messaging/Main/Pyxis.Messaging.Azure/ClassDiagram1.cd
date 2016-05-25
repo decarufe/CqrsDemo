@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pyxis.Messaging.Azure.BrokeredMessageTranslator">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAEAAIAAAAACAGAAIAAAAAAAAA=</HashCode>
+      <FileName>BrokeredMessageTranslator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.ChannelNameUtils">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChannelNameUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.ClientWrapper&lt;T&gt;">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQAAAAAAAAAAAABAAAAAAAAAAACAAAQ=</HashCode>
+      <FileName>ClientWrapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.Command.CommandListener" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACAAAEAAAIAAAEAIAAAAAAAAAABAAACAAAA=</HashCode>
+      <FileName>Command\CommandListener.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.Command.CommandQueue" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAIAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\CommandQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.Command.QueueClientWrapper">
+    <Position X="1" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\QueueClientWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.Event.EventBroadcasterClientWrapper">
+    <Position X="3.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\EventBroadcasterClientWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.Event.EventBus" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAIAAAAAAIAAAAAEAAQAAACAAAAA=</HashCode>
+      <FileName>Event\EventBus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pyxis.Messaging.Azure.Event.EventReceiverClientWrapper">
+    <Position X="6" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\EventReceiverClientWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pyxis.Messaging.Azure.IChannelIdentifier">
+    <Position X="1.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>IChannelIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pyxis.Messaging.Azure.Command.ICommandChannelIdentifier">
+    <Position X="2.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\ICommandChannelIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pyxis.Messaging.Azure.Event.IEventChannelIdentifier">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\IEventChannelIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://bitbucket.org/pyxisstudio/pyxis.persistance</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Pyxis.Core" version="1.0.2.0" />
+      <dependency id="Pyxis.Persistance" version="1.0.11.0" />
+      <dependency id="WindowsAzure.Storage" version="5.0.0" />
+    </dependencies>
+  </metadata>
+ 
+</package>

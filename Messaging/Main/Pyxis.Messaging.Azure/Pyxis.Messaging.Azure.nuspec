@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://bitbucket.org/pyxisstudio/pyxis.messaging</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Pyxis.Messaging" version="1.0" />
+      <dependency id="WindowsAzure.ServiceBus" version="3.0.1" />
+      <dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="3.0.1" />
+    </dependencies>
+  </metadata>
+</package>

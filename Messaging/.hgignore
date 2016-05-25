@@ -1,0 +1,5 @@
+syntax: glob
+Main/packages/**/*
+**/obj/**/*
+**/bin/**/*
+Main/Reports/**/*
