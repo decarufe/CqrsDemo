@@ -33,6 +33,7 @@ namespace CqrsDemoConsole
             bus.SendAndWait(new CreateOrder(id1));
             bus.SendAndWait(new AddOrderLine(id1, new OrderLine(5, "My Product")));
             bus.SendAndWait(new AddOrderLine(id1, new OrderLine(10, "My Other Product")));
+            bus.SendAndWait(new CompleteOrder(id1));
 
             #region Other example
 

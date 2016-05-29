@@ -31,6 +31,7 @@ namespace CqrsDemo.EventHandlers
                 Quantity = message.OrderLine.Quantity,
                 ProductName = message.OrderLine.ProductName
             });
+            _orderView.Update(orderDto);
         }
     }
 }

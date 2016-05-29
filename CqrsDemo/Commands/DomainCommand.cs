@@ -12,7 +12,5 @@ namespace CqrsDemo.Commands
 
         public string TrackingId { get; set; }
         public Guid Id { get; }
-        public string Username { get; }
-        public int? ExpectedVersion { get; }
     }
 }
