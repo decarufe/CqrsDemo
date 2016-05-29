@@ -69,6 +69,7 @@ namespace Pyxis.Cqrs.Domain
         }
     }
 
+    [Serializable]
     public class NullSessionInfo : SessionInfo
     {
     }

@@ -4,6 +4,7 @@ using Pyxis.Cqrs.Events;
 
 namespace CqrsDemo.Events
 {
+    [Serializable]
     public class OrderLineAdded : DomainEvent
     {
         private readonly OrderLine _orderLine;

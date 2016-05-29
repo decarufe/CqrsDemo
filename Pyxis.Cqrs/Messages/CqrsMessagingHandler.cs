@@ -61,7 +61,7 @@ namespace Pyxis.Cqrs.Messages
 
         public bool Dispatch(ICommand message)
         {
-            _logger.InfoFormat("Displatching message {0}", message.Type.Value);
+            _logger.InfoFormat("Dispatching message {0}", message.Type.Value);
             InitCache();
             HandlerStore handlerStore;
             _handlersCache.TryGetValue(message.Type.Value, out handlerStore);

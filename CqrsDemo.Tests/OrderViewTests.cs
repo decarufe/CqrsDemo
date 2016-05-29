@@ -19,13 +19,10 @@ namespace CqrsDemo.Tests
             [Test]
             public void Test()
             {
-                var handler = new OrderEventHandler();
+                OrderView orderView = new OrderView();
+                var handler = new OrderEventHandler(orderView);
                 handler.Handle(new OrderCreated(1.MakeGuid()));
-                handler.Handle(new OrderLineAdded(1.MakeGuid(), new OrderLine()
-                {
-                    Quantity = 3,
-                    ProductName = "MyProduct"
-                }));
+                handler.Handle(new OrderLineAdded(1.MakeGuid(), new OrderLine(3, "MyProduct")));
 
                 var view = new OrderView();
                 view.GetAll().Single().ShouldBeEquivalentTo(new OrderDto()

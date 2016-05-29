@@ -4,7 +4,7 @@ using Pyxis.Cqrs.Commands;
 
 namespace CqrsDemo.Commands
 {
-    public class AddOrderLine : Command
+    public class AddOrderLine : DomainCommand
     {
         private readonly OrderLine _orderLine;
 

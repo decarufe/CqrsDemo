@@ -3,9 +3,9 @@ using Pyxis.Cqrs.Commands;
 
 namespace CqrsDemo.Commands
 {
-    public class Command : IDomainCommand
+    public class DomainCommand : IDomainCommand
     {
-        public Command(Guid id)
+        public DomainCommand(Guid id)
         {
             Id = id;
         }

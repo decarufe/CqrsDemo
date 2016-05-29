@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace CqrsDemo.Services
 {
@@ -11,6 +12,11 @@ namespace CqrsDemo.Services
         public OrderDto()
         {
             OrderLines = new List<OrderLineDto>();
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Id: {0} \n{1}", Id, string.Join("\n", OrderLines));
         }
     }
 }

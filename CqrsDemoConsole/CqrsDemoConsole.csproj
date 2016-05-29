@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5F7C0B8D-6762-4D0C-B9BB-48A57A732A9E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{1B08FF47-6EAE-4BFB-958B-46D816163E3A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CqrsDemo</RootNamespace>
-    <AssemblyName>CqrsDemo</AssemblyName>
+    <RootNamespace>CqrsDemoConsole</RootNamespace>
+    <AssemblyName>CqrsDemoConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,24 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandHandlers\OrderCommandHandler.cs" />
-    <Compile Include="Commands\AddOrderLine.cs" />
-    <Compile Include="Commands\DomainCommand.cs" />
-    <Compile Include="Commands\CompleteOrder.cs" />
-    <Compile Include="Commands\CreateOrder.cs" />
-    <Compile Include="Domain\Order.cs" />
-    <Compile Include="Domain\OrderLine.cs" />
-    <Compile Include="EventHandlers\OrderEventHandler.cs" />
-    <Compile Include="Events\OrderCompleted.cs" />
-    <Compile Include="Events\OrderCreated.cs" />
-    <Compile Include="Events\OrderLineAdded.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\IView.cs" />
-    <Compile Include="Services\OrderDto.cs" />
-    <Compile Include="Services\OrderLineDto.cs" />
-    <Compile Include="Services\OrderView.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CqrsDemo\CqrsDemo.csproj">
+      <Project>{5f7c0b8d-6762-4d0c-b9bb-48a57a732a9e}</Project>
+      <Name>CqrsDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pyxis.Core\Pyxis.Core.csproj">
+      <Project>{483a9ad0-a84e-4793-b4a1-078c885d03b6}</Project>
+      <Name>Pyxis.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pyxis.Cqrs\Pyxis.Cqrs.csproj">
       <Project>{ae7af109-5c25-42b2-8301-6ef04c0943fd}</Project>
       <Name>Pyxis.Cqrs</Name>
@@ -71,10 +66,10 @@
       <Project>{37445682-e1e0-48a4-bc0f-325f0b4a8237}</Project>
       <Name>Pyxis.Messaging</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Pyxis.Persistance\Pyxis.Persistance.csproj">
+      <Project>{d432eee9-8765-4dd8-8f7b-e7070d1cd011}</Project>
+      <Name>Pyxis.Persistance</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

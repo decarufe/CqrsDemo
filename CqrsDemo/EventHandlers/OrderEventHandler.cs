@@ -8,11 +8,11 @@ namespace CqrsDemo.EventHandlers
         IHandleEvent<OrderCreated>,
         IHandleEvent<OrderLineAdded>
     {
-        private OrderView _orderView;
+        private readonly OrderView _orderView;
 
-        public OrderEventHandler()
+        public OrderEventHandler(OrderView orderView)
         {
-            _orderView = new OrderView();
+            _orderView = orderView;
         }
 
         public void Handle(OrderCreated message)

@@ -2,7 +2,7 @@
 
 namespace CqrsDemo.Commands
 {
-    public class CreateOrder : Command
+    public class CreateOrder : DomainCommand
     {
         public CreateOrder(Guid id) : base(id)
         {

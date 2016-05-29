@@ -66,11 +66,7 @@ namespace CqrsDemo.Tests
 
             protected override dynamic When()
             {
-                return new AddOrderLine(1.MakeGuid(), new OrderLine()
-                {
-                    Quantity = 3,
-                    ProductName = "MyProduct"
-                });
+                return new AddOrderLine(1.MakeGuid(), new OrderLine(3, "MyProduct"));
             }
 
             [Then]
@@ -78,11 +74,7 @@ namespace CqrsDemo.Tests
             {
                 ExpectEvents(new OrderLineAdded(
                     1.MakeGuid(),
-                    new OrderLine()
-                    {
-                        Quantity = 3,
-                        ProductName = "MyProduct"
-                    })
+                    new OrderLine(3, "MyProduct"))
                 {
                     Version = 2
                 });

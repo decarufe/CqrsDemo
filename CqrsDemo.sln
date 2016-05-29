@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pyxis.Messaging.Tests", "Py
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pyxis.Core.Tests", "Pyxis.Core.Tests\Pyxis.Core.Tests.csproj", "{016B6E92-94EB-4890-B7CD-BA8691475AA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsDemoConsole", "CqrsDemoConsole\CqrsDemoConsole.csproj", "{1B08FF47-6EAE-4BFB-958B-46D816163E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Azure Cloud Application|Any CPU = Azure Cloud Application|Any CPU
@@ -321,6 +323,34 @@ Global
 		{016B6E92-94EB-4890-B7CD-BA8691475AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{016B6E92-94EB-4890-B7CD-BA8691475AA8}.Release|x64.ActiveCfg = Release|Any CPU
 		{016B6E92-94EB-4890-B7CD-BA8691475AA8}.Release|x64.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure Cloud Application|Any CPU.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure Cloud Application|Any CPU.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure Cloud Application|x64.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure Cloud Application|x64.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure emulator|Any CPU.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure emulator|Any CPU.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure emulator|x64.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Azure emulator|x64.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Debug|x64.Build.0 = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Demo|x64.ActiveCfg = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Demo|x64.Build.0 = Debug|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.PerfDeploy|Any CPU.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.PerfDeploy|Any CPU.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.PerfDeploy|x64.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.PerfDeploy|x64.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.qa|Any CPU.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.qa|Any CPU.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.qa|x64.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.qa|x64.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Release|x64.ActiveCfg = Release|Any CPU
+		{1B08FF47-6EAE-4BFB-958B-46D816163E3A}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
