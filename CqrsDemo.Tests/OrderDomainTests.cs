@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using CqrsDemo.CommandHandlers;
 using CqrsDemo.Commands;
 using CqrsDemo.Domain;
 using CqrsDemo.Events;
-using FluentAssertions;
-using Moq;
 using NUnit.Framework;
-using Pyxis.Cqrs.Domain;
 using Pyxis.Cqrs.Events;
 using Pyxis.Cqrs.Tests;
 using Pyxis.Cqrs.Tests.TestHelpers;
 
 namespace CqrsDemo.Tests
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class OrderDomainTests
     {
         [TestFixture]

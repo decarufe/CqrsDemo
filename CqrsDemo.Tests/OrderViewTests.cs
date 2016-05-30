@@ -1,16 +1,15 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using CqrsDemo.Domain;
 using CqrsDemo.EventHandlers;
 using CqrsDemo.Events;
 using CqrsDemo.Services;
 using FluentAssertions;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 using Pyxis.Cqrs.Tests;
 
 namespace CqrsDemo.Tests
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class OrderViewTests
     {
         [TestFixture()]
