@@ -11,6 +11,6 @@ namespace CqrsDemo.Commands
         }
 
         public string TrackingId { get; set; }
-        public Guid Id { get; }
+        public Guid Id { get; private set; }
     }
 }
